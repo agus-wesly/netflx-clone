@@ -1,0 +1,237 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-9");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica 35 Thin", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/f669a8f4-de1e-49d7-bb56-c9bd1f4a9069/77799be3-f48f-45e4-a464-712a0eb5dcc1/ID-id-20221031-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 16px;
+}
+
+.logo {
+  fill: #e50914;
+  width: 167px;
+  height: 65px;
+  line-height: 90px;
+  margin-left: 16px;
+}
+
+.login {
+  max-width: 450px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  margin: 0 auto;
+  align-items: flex-start;
+  min-height: 660px;
+}
+
+.login > h1 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+.form-login {
+  width: 100%;
+}
+
+.form-login > .container {
+  color: #333;
+  width: 100%;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.form-login > .container > label {
+  color: #8c8c8c;
+  font-size: 14px;
+  left: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
+}
+
+.form-login > .container > input {
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  height: 50px;
+  padding: 16px 20px 0;
+  background: #333333;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+}
+
+.form-login > .container > input:active,
+.form-login > .container > input:focus {
+  outline: none;
+  border: none;
+}
+
+#username:is(:focus) ~ label,
+#pass:is(:focus) ~ label {
+  top: 25%;
+  font-size: 10px;
+}
+
+button {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 24px 0 12px;
+  background-color: rgb(229, 9, 20);
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+  padding: 1rem 0;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: rgba(229, 9, 20, 0.8);
+}
+
+.login-option {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #b3b3b3;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.login-option input {
+  accent-color: #333;
+  line-height: 1.2;
+  padding: 6px 0;
+  position: relative;
+}
+
+.login-bottom {
+  color: rgb(115, 115, 115);
+  display: flex;
+  text-align: left;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 3.5rem;
+  gap: 15px;
+}
+
+.login-bottom > p:first-child > span {
+  color: #ffffff;
+}
+
+.login-bottom > p:last-child {
+  color: #8c8c8c;
+  font-size: 13px;
+}
+
+.login-bottom > p:last-child > span {
+  background-color: transparent;
+  border: none;
+  color: #0071eb;
+  cursor: pointer;
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  width: 100%;
+  padding-top: 12px;
+}
+
+footer > .footer-container {
+  margin: 20px auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container p {
+  color: #737373;
+  font-size: 16px;
+}
+
+.footer-container > p > span {
+  cursor: pointer;
+}
+
+.footer-container > p > span {
+  text-decoration: underline;
+}
+
+.footer-container > .footer-links {
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-container > .footer-links > p {
+  width: 200px;
+  font-size: 13px;
+}
+
+.footer-container > .language {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.footer-container > .language select {
+  width: 100%;
+  background-color: #000;
+  border: 1px solid #333;
+  width: 185px;
+  padding: 16px;
+  color: white;
+  margin: 1rem 0 1rem 0;
+}
+
+@media (max-width: 740px) {
+  body {
+    background: black;
+    padding: 16px;
+    overflow-x: hidden;
+  }
+  .login {
+    max-width: fit-content;
+    margin: 16px;
+    padding: 16px;
+    min-height: auto;
+  }
+  .login > h1 {
+    margin-bottom: 16px;
+  }
+  footer {
+    margin: 1rem 32px;
+  }
+}
